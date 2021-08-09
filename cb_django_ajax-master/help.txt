@@ -1,0 +1,60 @@
+INSTALL VIRTUAL ENVIRONMENT
+---------------------------
+create any folder
+Enter with commadline -(double click on the top path and type 'cmd')
+pip install virtualenv
+virtualenv venv
+call venv/Scripts/activate
+
+CHECK VERSIONS
+--------------
+django-admin --version
+python --version
+pip --version
+
+INSTALL DEPENDENCIES
+--------------------
+
+pip install django
+
+
+
+CREATE PROJECT AND RUNSERVER
+-------------
+django-admin startproject crud_project
+cd crud_project
+python manage.py runserver
+http://127.0.0.1:8000/
+
+CREATE SUPER ADMIN
+------
+python manage.py createsuperuser
+Robinson
+Robert@123
+
+CREATE APP
+---------
+python manage.py startapp crud_app
+
+
+GIT
+----
+Enter with git  commadline (right click on folder then select gitbash here option)
+source venv/Scripts/activate
+git init
+git add .				#for staging
+git commit -m "first commit"		#commit
+git remote add origin https://github.com/Robinsonkr/crud.git
+git branch -M main
+git push -u origin main
+git pull 
+
+
+or push an existing repository from the command line
+--
+git remote add origin https://github.com/Robinsonkr/myclub.git
+git branch -M main
+git push -u origin main
+
+
+
